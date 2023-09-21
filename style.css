@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.b1{
+    background: rgb(84, 138, 238);
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+  .header {
+    background: rgb(31, 101, 232);
+    padding-inline: 16px;
+  }
+  
+  .nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 48px;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+  }
+  
+  .hero {
+    height: calc(100vh - 70px);
+    background: center / cover no-repeat url("./bg.jpg");
+  }
+  
+  .hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+  }
+  
+  .hamburguer::after,
+  .hamburguer::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 1920px) {
+    .hamburguer {
+      display: block;
+      z-index: 1001;
+  
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgb(8, 66, 174);
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
+      z-index: 1000;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
+    }
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+    }
+  
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+  
+    
+  
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+  
+    .nav.active .hamburger {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+  
+
+
+.t1{
+    text-align: center;
+    position: relative;
+    top: -246px;
+    left: 0px;
+    color: white;
+}
+
+.cdtposition {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: -188px;
+    left: 0;
+}
+
+.cdt {
+    background-color: #ffffff;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    width: 309px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.cdt p {
+    color: #445151;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: none;
+}
+.img1 {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: -972px;
+}
+
+.img2 {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  top: -785px;
+  left: 254px;
+  width: 914px;
+  height: 721px;
+}
+
+.img3 {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  top: -1111px;
+  left: 849px;
+  width: 37px;
+  height: 46px;
+}
+
+.img4 {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  top: -1214px;
+  left: 910px;
+  width: 296px;
+  height: 223px;
+}
+.t2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: x-large;
+  position: relative;
+  top: -1204px;
+  left: 413px;
+}
+
+.tg{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 84px;
+}
+
+.imggeral{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top:10px;
+}
+
+.cdtposition1 {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 144px;
+    left: 0;
+}
+
+.tg1{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top: 22px;
+}
+
+.cdtposition2 {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  top: 29px;
+  left: 0;
+}
+
+.imggeral1{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top:10px;
+  width:529 ;
+  height:395 ;
+}
+
+
